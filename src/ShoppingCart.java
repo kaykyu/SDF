@@ -17,7 +17,8 @@ public class ShoppingCart {
     }       
 
     public static void add(String input) {
-        String allItems = input.substring(4);
+        String trim = input.trim();
+        String allItems = trim.substring(4);
         String[] items = allItems.split(",");
         for (String item : items) {
             String trimmedItem = item.trim();
@@ -31,7 +32,8 @@ public class ShoppingCart {
         }
 
     public static void delete(String input){
-        String num = input.substring(7);
+        String trim = input.trim();
+        String num = trim.substring(7);
         int index = Integer.parseInt(num);
         if (list.size() < index) {
             System.out.println("Incorrect item index");
