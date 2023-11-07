@@ -7,3 +7,4 @@ Commands that can be used are as follows:
 • login - load the specified user’s database file from the shopping cart directory, E.g. login fred will load file cartdb/fred.db where cartdb is the shopping cart database directory.
 • save - save the contents of the cart to the user’s shopping cart file.
 • users - list all users.
+• quit - exit shopping cart.
